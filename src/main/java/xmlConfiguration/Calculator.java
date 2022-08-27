@@ -2,13 +2,13 @@ package xmlConfiguration;
 
 public class Calculator {
     private PlusService plusService;
-    private  MinusService minusService;
-    public int calculate(int first,int second)
-    {
-        if(first>second)
-            return minusService.minusService(first,second);
+    private MinusService minusService;
+
+    public int calculate(int first, int second) {
+        if (first > second)
+            return minusService.minusService(first, second);
         else
-            return  plusService.plusService(first,second);
+            return plusService.plusService(first, second);
 
     }
 
